@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link rel = "stylesheet" href = "{% static 'homepage/styles.css' %}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="{% url 'homepage:index' %}">
+                <img src="{% static 'homepage/AtlasLogo.png' %}" alt="Atlas Small Logo" width="60" height="24">
+                <a class = "text-decoration-none fw-lighter" href = "{% url 'homepage:index' %}">Atlas Search</a>
+                <a class = "text-decoration-none fw-lighter" href = "{% url 'homepage:imageSearch' %}">Image Search</a>
+              </a>
+            </div>
+          </nav>
+        <h1 class = "aasText mt-3 ml-3">Atlas Advanced Search</h1>
+        <hr/>
+        <div class = "Mza7yc">
+            <form action = "https://google.com/search">
+                <div class = "otByu">
+                    <div class = "yIQOUb">
+                        <div class = "I1Kbt">
+                            <div class = "lOTAE">
+                                <span>Show pages that contain...</span>
+                            </div>
+                        </div>
+                        <div class = "HoCfzc">&nbsp</div>
+                        <div class = "orcpGe">
+                            <div class = "lOTAE">To do this in the search box</div>
+                        </div>
+                    </div>
+                </div>
+              <div class="otByu">
+                   <div class="yIQOUb">
+                        <div class="FAcADc">
+                            <div class="lOTAE">
+                                  <label for="xX4UFf">all these words:</label> 
+                            </div>
+                        </div> 
+                        <div class="jYcx0e"> 
+                            <div class="PLLUQc"> 
+                                <input class="jfk-textinput" value="" autofocus="autofocus" id="xX4UFf" name="as_q" type="text"> 
+                            </div> 
+                        </div> 
+                        <div class="cwqNnb dulCv"> 
+                            <div class="lOTAE">Type the important words:  
+                                <span class="BFlQMb">Terrier buzzard tricolor</span>   
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="yIQOUb"> 
+                        <div class="FAcADc"> 
+                            <div class="lOTAE"> 
+                                <label for="CwYCWc">this exact word or phrase:</label>    
+                            </div> 
+                        </div> 
+                        <div class="jYcx0e"> 
+                            <div class="PLLUQc"> 
+                                <input class="jfk-textinput" value="" id="CwYCWc" name="as_epq" type="text"> 
+                            </div> 
+                        </div> 
+                        <div class="cwqNnb dulCv"> 
+                            <div class="lOTAE">Type the exact words between quotes:   
+                                <span class="BFlQMb">"Terrier buzzard"</span>   
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="yIQOUb"> 
+                        <div class="FAcADc"> 
+                            <div class="lOTAE"> 
+                                <label for="mSoczb">any of these words:</label>   
+                            </div> 
+                        </div> 
+                        <div class="jYcx0e"> 
+                            <div class="PLLUQc"> 
+                                <input class="jfk-textinput" value="" id="mSoczb" name="as_oq" type="text"> 
+                            </div> 
+                        </div> 
+                        <div class="cwqNnb dulCv"> 
+                            <div class="lOTAE">Type 
+                                <span class="BFlQMb">OR</span> 
+                                between words:  
+                                <span class="BFlQMb">Miniature size OR standard</span>   
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="yIQOUb"> 
+                        <div class="FAcADc"> 
+                            <div class="lOTAE"> 
+                                <label for="t2dX1c">none of these words:</label>    
+                            </div> 
+                        </div> 
+                        <div class="jYcx0e"> 
+                            <div class="PLLUQc"> 
+                                <input class="jfk-textinput" value="" id="t2dX1c" name="as_eq" type="text"> 
+                            </div> 
+                        </div> 
+                        <div class="cwqNnb dulCv"> 
+                            <div class="lOTAE">Type a minus sign right before words you do not wish to appear:  
+                                <span class="BFlQMb">-Rodent, -"Jack Russell"</span>   
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="yIQOUb"> 
+                        <div class="FAcADc"> 
+                            <div class="lOTAE"> 
+                                <label for="LK5akc">numbers from:</label> 
+                            </div> 
+                        </div> 
+                        <div class="jYcx0e" style="position:relative"> 
+                            <div style="display:table;width:100%"> 
+                                <div style="display:table-cell;padding-right:16px"> 
+                                    <input class="jfk-textinput" id="LK5akc" name="as_nlo" type="text"> 
+                                </div> 
+                                <div style="display:table-cell;width:40px;padding-right:6px;padding-left:6px;text-align:center;font-size:13px;color:#202124">al</div>
+                                <div style="display:table-cell;padding-right:16px"> 
+                                    <input class="jfk-textinput" name="as_nhi" type="text"> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="cwqNnb dulCv"> 
+                            <div class="lOTAE">Type two periods between numbers and add a measurement unit: 
+                                <span class="BFlQMb">10..35 lb, $300..$500, 2010..2011</span>
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="yIQOUb"></div> 
+                </div>
+                <div class="yIQOUb"> 
+                    <div class="FAcADc"></div> 
+                    <div class="jYcx0e" style="text-align:right"> 
+                        <input id="CIGjud" name="tbs" type="hidden" value=""> 
+                        <input class="jfk-button jfk-button-action dUBGpe" style="-webkit-user-select:none;user-select:none;line-height:100%;height:30px;min-width:120px" value="Advanced Search" type="submit"> 
+                    </div> 
+                    <div class="cwqNnb"></div> 
+                </div>
+            </form>
+        </div>
+
+
+    </body>
+</html>
